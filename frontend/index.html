@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled placeholder="0">
+
+        <div class="buttons">
+
+            <!-- Memory Buttons -->
+            <button class="btn memory" data-mem="MC">MC</button>
+            <button class="btn memory" data-mem="MR">MR</button>
+            <button class="btn memory" data-mem="M+">M+</button>
+            <button class="btn memory" data-mem="M-">M-</button>
+
+            <!-- Clear / Operators -->
+            <button class="btn clear">C</button>
+            <button class="btn clear-entry">CE</button>
+            <button class="btn operator">%</button>
+            <button class="btn operator">/</button>
+
+            <!-- Scientific Functions -->
+            <button class="btn function" data-func="sqrt">√</button>
+            <button class="btn function" data-func="square">x²</button>
+            <button class="btn function" data-func="reciprocal">1/x</button>
+            <button class="btn operator">*</button>
+
+            <button class="btn function" data-func="sin">sin</button>
+            <button class="btn function" data-func="cos">cos</button>
+            <button class="btn function" data-func="tan">tan</button>
+            <button class="btn operator">-</button>
+
+            <button class="btn function" data-func="log">log</button>
+            <button class="btn function" data-func="ln">ln</button>
+            <button class="btn function" data-func="exp">exp</button>
+            <button class="btn operator">+</button>
+
+            <!-- Numbers -->
+            <button class="btn number">7</button>
+            <button class="btn number">8</button>
+            <button class="btn number">9</button>
+            <button class="btn operator">^</button>
+
+            <button class="btn number">4</button>
+            <button class="btn number">5</button>
+            <button class="btn number">6</button>
+            <button class="btn toggle-sign">+/-</button>
+
+            <button class="btn number">1</button>
+            <button class="btn number">2</button>
+            <button class="btn number">3</button>
+            <button class="btn number zero">0</button>
+
+            <button class="btn number">.</button>
+            <button class="btn equals">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

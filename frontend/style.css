@@ -1,0 +1,106 @@
+
+/* Body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1a001a; /* dark purple background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Calculator container */
+.calculator {
+    background: #c71585; /* dark pink */
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px #ff00ff;
+    border: 2px solid #ff00ff; /* neon outline */
+    width: 320px; /* smaller width */
+}
+
+/* Display input */
+#display {
+    width: 100%;
+    height: 50px; /* slightly smaller */
+    font-size: 1.6rem; /* smaller text */
+    border-radius: 12px;
+    border: 2px solid white;
+    text-align: right;
+    padding-right: 12px;
+    margin-bottom: 15px;
+    background: #ffe6f0;
+    color: #c71585;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Button grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px); /* smaller buttons */
+    grid-gap: 10px; /* smaller gap */
+}
+
+/* General button style */
+.btn {
+    padding: 15px;
+    font-size: 1.2rem; /* smaller font */
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+    background: #ffb6c1;
+    color: #c71585;
+    border: 2px solid white;
+    box-shadow: 0 4px #d16aa3;
+}
+
+/* Hover effect */
+.btn:hover {
+    background: #ff85c1;
+    box-shadow: 0 0 12px #ff00ff;
+}
+
+/* Pressed effect */
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px #d16aa3;
+}
+
+/* Zero button spans two columns */
+.zero {
+    grid-column: span 2;
+}
+
+/* Scientific function buttons */
+.function {
+    background: #ff66b2;
+    box-shadow: 0 4px #ff3399;
+}
+
+/* Memory buttons */
+.memory {
+    background: #ff99cc;
+    box-shadow: 0 4px #ff66aa;
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 400px) {
+    .calculator {
+        width: 90%; /* fit mobile screens */
+        padding: 15px;
+    }
+    .buttons {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 8px;
+    }
+    .btn {
+        padding: 12px;
+        font-size: 1rem;
+    }
+    #display {
+        height: 45px;
+        font-size: 1.4rem;
+        padding-right: 10px;
+    }
+}
