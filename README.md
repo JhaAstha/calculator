@@ -17,6 +17,9 @@ this code has been deployed on github pages so,one can easily see the working of
 Future enhancement:-
 
 can me modified into more attractive version
+
+also
+
 more scientific functions can be added
 
 
