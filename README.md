@@ -14,4 +14,9 @@ how to run and check:-
 this code has been deployed on github pages so,one can easily see the working of this calculator
 
 
+Future enhancement:-
+
+can me modified into more attractive version
+more scientific functions can be added
+
 
