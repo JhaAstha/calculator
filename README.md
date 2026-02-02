@@ -2,6 +2,7 @@ A basic sientific calculator that does all the calculation with a unique neon pi
 
 technologies used:-
 
+
 javascript
 
 css
